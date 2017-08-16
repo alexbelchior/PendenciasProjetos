@@ -1,0 +1,19 @@
+view_pendencias_total_por_projeto
+create view view_pendencias_total_por_projeto as select projetos.nome as projeto, COUNT(*) as total, pendencias.Projetos_id from projetos, pendencias where pendencias.Projetos_id = projetos.id and projetos.ativo = 'S' and pendencias.Statuss_id <> 3 GROUP BY projetos.nome
+
+
+view_situacao_projetos
+SELECT ativo as 'Situacao', COUNT(*) as 'Total' FROM projetos GROUP BY ativo
+
+
+
+
+
+Verificar se tem algo de rastreabilidade no CAEX;
+Tem alguma exclusão de fato no CAEX?
+Levantar dados para cadastro de usuário
+
+4202,06
+
+11% inss 462,22
+15% IR 206,18
