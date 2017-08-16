@@ -1,0 +1,43 @@
+body{
+	padding-top: 50px;
+}
+
+.principal{
+	padding: 40px 15px;
+	text-align: center;
+}
+
+.tamanho-pp{
+	width:65px;
+}
+.tamanho-p{
+	width:128px;
+}
+
+.tamanho-m{
+	width:150px;
+}
+
+.tamanho-g{
+	width:350px;
+}
+
+.tamanho-gg{
+	width:600px;
+}
+
+.alinhamento-direita{
+	text-align:right; 
+}
+
+.alinhamento-esquerda{
+	text-align:left;
+}
+
+.alinhamento-centralizado{
+	text-align:center;
+}
+
+.tr-alta{
+	background:#FA8072;
+}
