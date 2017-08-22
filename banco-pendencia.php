@@ -23,7 +23,7 @@ function listaPendencias($conexao){
 
 function buscaPendenciaProjeto($conexao, $id){
 	$pendencias = array();
-	$query = "select pd.* , s.tipo as status, c.tipo as complexidade, p.nome as projeto from pendencias as pd join statuss as s on s.id=pd.Statuss_id join complexidade as c on c.id=pd.Complexidade_id join projetos as p on p.id=pd.Projetos_id where pd.Projetos_id={$id}";
+	$query = "select pd.* , s.tipo as status, c.tipo as complexidade, p.nome as projeto from pendencias as pd join statuss as s on s.id=pd.Statuss_id join complexidade as c on c.id=pd.Complexidade_id join projetos as p on p.id=pd.Projetos_id where pd.Projetos_id={$id} and pd.Statuss_id<>3";
 	$resultado = mysqli_query($conexao, $query);
 	while ($pendencia = mysqli_fetch_assoc($resultado)){
 		array_push($pendencias, $pendencia);
