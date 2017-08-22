@@ -59,7 +59,9 @@ $verticais = listaVertical($conexao);
 			</tr>
 			<tr>
 				<td class="alinhamento-direita">Ativo:</td>
-				<td><input class="form-control tamanho-pp" type="text" name="ativo"></td>
+				<td><select name="ativo" class="form-control tamanho-p" >
+					<option value="S">Sim</option>
+					<option value="N">Não</option></td>
 			</tr>
 			<tr>
 				<td><input class="btn btn-primary" type="submit" value="Cadastrar"></td>
